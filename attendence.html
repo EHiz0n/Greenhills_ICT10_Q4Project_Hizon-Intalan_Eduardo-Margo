@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Skills-Test</title>
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+
+    <style>
+        body {
+            background-color: darkslategray; 
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="attendence.html">Attendence Tracker</a></li>
+        <li><a href="list.html">Classmate List</a></li>
+        <li><a href="photos.html">Photos Highlight</a></li>
+    </ul>
+    </nav>
+
+    <form>
+    <div class="mb-2">
+    <label>Select Day</label>
+    <select name="Day" id="Day" class="form-select">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+    </select>
+    </div>
+    
+    <div class="mb-2">
+        <label>Absences</label>
+        <input type="number" id="absences" value="0">
+    </div>
+
+
+    <div class="mb-2">
+        <input type="button" py-click="displaying" value="Submit">
+    </div>
+
+    </form>
+    
+    <div id="output"></div>
+    <py-script src="attendence.py"></py-script>
+</body>
+</html>
