@@ -13,7 +13,7 @@ days = []
 absences = []
 
 
-def displaying(*args):
+def displaying():
     Day = document.getElementById('Day').value
     absence = int(document.getElementById('absences').value)
     days.append(Day)
