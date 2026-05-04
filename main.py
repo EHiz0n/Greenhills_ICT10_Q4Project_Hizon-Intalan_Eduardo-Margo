@@ -20,6 +20,7 @@ def displaying():
     absences.append(absence)
     converted_absences = np.array(absences)
 
+
     plt.clf()
     plt.plot(days, converted_absences)
     plt.title('Weekly Attendance (Absences)')
