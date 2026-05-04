@@ -13,13 +13,12 @@ days = []
 absences = []
 
 
-def displaying():
+def displaying(*args):
     Day = document.getElementById('Day').value
     absence = int(document.getElementById('absences').value)
     days.append(Day)
     absences.append(absence)
     converted_absences = np.array(absences)
-
 
     plt.clf()
     plt.plot(days, converted_absences)
